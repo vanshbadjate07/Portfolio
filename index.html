@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vansh's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <h1 style="cursor:pointer" onclick="history.go(0)">Vansh Badjate</h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-regular fa-bars"></i>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="home" class="home">
+        <div class="content">
+          <h1 class="greet">Hello There! 👋</h1>
+          <h2 class="name">I'm Vansh Badjate...</h2>
+          <br />
+          <p class="intro">
+            A passionate B.Tech student specializing in Artificial Intelligence
+            & Machine Learning<br />
+            at Sanjivani University, Kopargaon.
+          </p>
+        </div>
+        <div class="img">
+          <img src="img/img.png" alt="My self" />
+        </div>
+      </div>
+
+      <div id="about" class="about">
+        <div class="title">
+          <h1>About Me</h1>
+        </div>
+        <div class="txt-content">
+          <p>
+            Hello, I'm <span class="highlight">Vansh Badjate</span> from
+            <span class="highlight">Kopargaon</span>. Currently, I'm in my
+            <span class="highlight">2nd year of B.Tech</span> specializing in
+            <span class="highlight"
+              >Artificial Intelligence & Machine Learning</span
+            >
+            at <span class="highlight">Sanjivani University, Kopargaon</span>.
+          </p>
+
+          <p>
+            I am passionate about <span class="highlight">coding</span>,
+            <span class="highlight">technology</span>, and
+            <span class="highlight">AI</span>, and I am constantly seeking new
+            ways to apply my skills to solve real-world problems. My goal is to
+            explore and contribute to innovative projects in the fields of
+            <span class="highlight">AI</span>,
+            <span class="highlight">machine learning</span>, and
+            <span class="highlight">data science</span>. I enjoy working on
+            hands-on projects that challenge me and help me learn more.
+          </p>
+
+          <p>
+            In addition to my academic pursuits, I love
+            <span class="highlight">gaming</span> and enjoy exploring how
+            <span class="highlight">AI</span> can be used to enhance the gaming
+            experience.
+          </p>
+
+          <p>
+            I'm always open to opportunities that will help me grow as a
+            professional and contribute to impactful projects. I am eager to
+            connect with like-minded individuals and learn from experiences that
+            will shape my career.
+          </p>
+        </div>
+        <div class="socials">
+          <div class="head">
+            <h1>Social Links</h1>
+          </div>
+          <div class="icons">
+            <div class="git">
+              <a href="https://github.com/vanshbadjate07" target="_blank">
+                <i class="fa-brands fa-github size"></i>
+              </a>
+            </div>
+            <div class="linkedin space">
+              <a
+                href="https://www.linkedin.com/in/vansh-badjate1008/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin size"></i>
+              </a>
+            </div>
+            <div class="insta space">
+              <a
+                href="https://www.instagram.com/vansh_badjate07/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram size"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" class="skills">
+        <div class="title">
+          <h1>My Skills</h1>
+        </div>
+        <div class="skill_content">
+          <div class="web-dev">
+            <h1 style="font-size: 23px">Web Development</h1>
+            <div class="list">
+              <h3><i class="fa-brands fa-html5"></i>&nbsp; HTML</h3>
+              <progress class="bar" value="95" max="100"></progress>
+
+              <h3><i class="fa-brands fa-css3-alt"></i>&nbsp; CSS</h3>
+              <progress class="bar" value="85" max="100"></progress>
+
+              <h3><i class="fa-brands fa-js"></i>&nbsp; JavaScript</h3>
+              <progress class="bar" value="75" max="100"></progress>
+
+              <h3><i class="fa-brands fa-react"></i>&nbsp; React</h3>
+              <progress class="bar" value="35" max="100"></progress>
+            </div>
+          </div>
+          <div class="programming">
+            <h1 style="font-size: 23px">Programming</h1>
+            <div class="list">
+              <h3><i class="fa-brands fa-java"></i>&nbsp; Java</h3>
+              <progress class="bar" value="78" max="100"></progress>
+
+              <h3><i class="fa-brands fa-python"></i>&nbsp; Python</h3>
+              <progress class="bar" value="70" max="100"></progress>
+
+              <h3><i class="fas fa-code"></i>&nbsp; C</h3>
+              <progress class="bar" value="69" max="100"></progress>
+
+              <h3><i class="fa-regular fa-square-terminal"></i>&nbsp;C++</h3>
+              <progress class="bar" value="60" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="projects">
+        <div class="title">
+          <h1>My Projects</h1>
+        </div>
+        <div class="desc">
+          <h3 class="pro-desc">
+            Here are some of the projects I have worked on, showcasing my skills
+            in web development, AI/ML, and programming.<br />
+            Each project reflects my passion for technology and problem-solving.
+          </h3>
+        </div>
+        
+        <div class="project_content">
+          <div class="project-card" onclick="window.open('https://quick-weather-forecast.netlify.app/', '_blank')">
+            <div class="image">
+              <img src="img/weatherApp.png" alt="Weather App">
+            </div>
+            <div class="pro_title">
+              <h3>Weather App</h3>
+            </div>
+            <div class="short_desc">
+              <p>A responsive weather application that provides real-time weather updates based on location.</p>
+            </div>
+          </div>
+          
+          <div class="project-card" onclick="window.open('https://vansh-calculator.netlify.app/', '_blank')">
+            <div class="image">
+              <img src="img/calcuApp.png" alt="Simple Calculator">
+            </div>
+            <div class="pro_title">
+              <h3>Simple Calculator</h3>
+            </div>
+            <div class="short_desc">
+              <p>A basic web calculator using HTML, CSS, and JavaScript, supporting arithmetic operations, percentage calculations, and real-time input display with a modern UI.</p>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="image">
+              <img src="img/Landingpage.png" alt="Landing Page">
+            </div>
+            <div class="pro_title">
+              <h3>Cars Landing Page</h3>
+            </div>
+            <div class="short_desc">
+              <p>Discover luxury cars with sleek designs, specs, comparisons, and a test drive booking option—all in one place!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resume" class="resume">
+        <div class="title">
+          <h1>My Resume</h1>
+        </div>
+        <div class="resume-content">
+          <p>Here is the download link for my resume:</p>
+          <a href="RESUME.pdf" download class="resume-btn">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div id="contact" class="contact">
+        <div class="title">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Email: <a href="mailto:badjatevansh1008@gmail.com">badjatevansh1008@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/vansh-badjate1008/" target="_blank">vansh-badjate1008</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <p>GitHub: <a href="https://github.com/vanshbadjate07" target="_blank">vanshbadjate07</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-instagram"></i>
+              <p>Instagram: <a href="https://www.instagram.com/vansh_badjate07/" target="_blank">vansh_badjate07</a></p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send me a message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2025 Vansh Badjate. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
