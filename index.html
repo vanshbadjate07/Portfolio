@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vansh Badjate | AI & ML Developer</title>
+  <meta name="description"
+    content="Portfolio of Vansh Badjate - B.Tech student specializing in Artificial Intelligence & Machine Learning at Sanjivani University.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader">
+      <div class="loader-text">
+        <span class="letter">V</span>
+        <span class="letter">A</span>
+        <span class="letter">N</span>
+        <span class="letter">S</span>
+        <span class="letter">H</span>
+      </div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Vansh</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="Resume.pdf" target="_blank" class="nav-link nav-resume">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text" data-animate>
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">
+          <span class="gradient-text">Vansh Badjate</span>
+        </h1>
+        <h2 class="hero-title">
+          <span class="typing-text"></span>
+          <span class="cursor-blink">|</span>
+        </h2>
+        <p class="hero-description">
+          B.Tech student specializing in <span class="highlight">AI & Machine Learning</span> at Sanjivani University.
+          Building intelligent solutions with <span class="highlight">Computer Vision</span> and <span
+            class="highlight">Deep Learning</span>.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/vanshbadjate07" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vansh-badjate1008/" target="_blank" class="social-icon"
+            aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/vansh_badjate07/" target="_blank" class="social-icon"
+            aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image" data-animate>
+        <div class="image-wrapper">
+          <div class="image-glow"></div>
+          <img src="img/img.png" alt="Vansh Badjate">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">// About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text" data-animate>
+          <p>
+            I'm a <span class="highlight">third-year B.Tech student</span> specializing in
+            <span class="highlight">Artificial Intelligence & Machine Learning</span> at Sanjivani University,
+            Kopargaon.
+            With a strong foundation in computer science and a passion for AI, I'm dedicated to building
+            intelligent systems that solve real-world problems.
+          </p>
+          <p>
+            My expertise spans <span class="highlight">Computer Vision</span>, <span class="highlight">Deep
+              Learning</span>,
+            and <span class="highlight">Machine Learning</span>. I've developed projects ranging from real-time threat
+            detection systems to healthcare AI applications, always focusing on creating impactful solutions.
+          </p>
+          <p>
+            Beyond academics, I actively participate in hackathons and continuously expand my knowledge
+            through hands-on projects and internships. I'm driven by curiosity and the desire to push
+            the boundaries of what's possible with AI.
+          </p>
+
+          <div class="achievements-grid">
+            <div class="achievement-badge">
+              <i class="fa-solid fa-trophy"></i>
+              <div>
+                <h4>SunHack 2025</h4>
+                <p>Hackathon Participant</p>
+              </div>
+            </div>
+
+            <div class="achievement-badge">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <h4>AI & Cloud</h4>
+                <p>Internship Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-education" data-animate>
+          <h3 class="education-title">Education</h3>
+
+          <div class="education-item">
+            <div class="education-header">
+              <div class="education-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="education-info">
+                <h4>B.Tech in CSE (AI & ML)</h4>
+                <p class="institution">Sanjivani University, Kopargaon</p>
+                <p class="duration">2024 - 2027</p>
+              </div>
+            </div>
+            <div class="education-grade">
+              <span class="grade-label">CGPA</span>
+              <span class="grade-value">8.55</span>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-header">
+              <div class="education-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="education-info">
+                <h4>Diploma in Computer Engineering</h4>
+                <p class="institution">Sanjivani K.B.P. Polytechnic, Kopargaon</p>
+                <p class="duration">2021 - 2024</p>
+              </div>
+            </div>
+            <div class="education-grade">
+              <span class="grade-label">Percentage</span>
+              <span class="grade-value">84.51%</span>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-header">
+              <div class="education-icon">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <div class="education-info">
+                <h4>SSC (10th)</h4>
+                <p class="institution">S.G.Vidyalaya, Kopargaon</p>
+                <p class="duration">2021</p>
+              </div>
+            </div>
+            <div class="education-grade">
+              <span class="grade-label">Percentage</span>
+              <span class="grade-value">85.60%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">// Tech Stack</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills-marquee">
+        <div class="marquee-content">
+          <div class="skill-item">
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-brain"></i>
+            <span>TensorFlow</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-eye"></i>
+            <span>OpenCV</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-cube"></i>
+            <span>Keras</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Scikit-learn</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-table"></i>
+            <span>Pandas</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-calculator"></i>
+            <span>NumPy</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-flask"></i>
+            <span>Flask</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Streamlit</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-terminal"></i>
+            <span>C++</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-database"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-leaf"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-content" aria-hidden="true">
+          <div class="skill-item">
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-brain"></i>
+            <span>TensorFlow</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-eye"></i>
+            <span>OpenCV</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-cube"></i>
+            <span>Keras</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Scikit-learn</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-table"></i>
+            <span>Pandas</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-calculator"></i>
+            <span>NumPy</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-flask"></i>
+            <span>Flask</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Streamlit</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-terminal"></i>
+            <span>C++</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-database"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-leaf"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">// Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">
+          A collection of my work in AI, Computer Vision, and Web Development
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: SafeVision -->
+        <div class="project-card" data-animate data-tilt>
+          <div class="project-image">
+            <img src="img/SafeVision.png" alt="SafeVision CCTV System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>SafeVision</h3>
+              <span class="project-year">2024</span>
+            </div>
+            <p class="project-description">
+              Real-time smart CCTV threat detection system with weapon detection, masked individual identification,
+              and automated alert mechanisms for enhanced security.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>Flask</span>
+              <span>Deep Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Skin Cancer Classification -->
+        <div class="project-card" data-animate data-tilt>
+          <div class="project-image">
+            <img src="img/SkinCancer.png" alt="Skin Cancer Classification">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Skin Cancer Classifier</h3>
+              <span class="project-year">2024</span>
+            </div>
+            <p class="project-description">
+              Image-based skin cancer classification system using deep learning to identify cancer types (AK, BCC, SK)
+              with confidence scores and heatmap visualization.
+            </p>
+            <div class="project-tags">
+              <span>PyTorch</span>
+              <span>Streamlit</span>
+              <span>OpenCV</span>
+              <span>Healthcare AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AgriPredict -->
+        <div class="project-card" data-animate data-tilt>
+          <div class="project-image">
+            <img src="img/AgriPredict.png" alt="AgriPredict System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>AgriPredict</h3>
+              <span class="project-year">2024</span>
+            </div>
+            <p class="project-description">
+              Smart crop yield forecasting platform using ML with real-time weather monitoring and
+              multilingual voice assistant for enhanced accessibility.
+            </p>
+            <div class="project-tags">
+              <span>Machine Learning</span>
+              <span>Flask</span>
+              <span>Node.js</span>
+              <span>API Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Face Emotion Detection -->
+        <div class="project-card" data-animate data-tilt>
+          <div class="project-image">
+            <img src="img/FaceEmotion.png" alt="Face Emotion Detection">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/vanshbadjate07/Face-Emotion-Detection-" target="_blank" class="project-link"
+                  aria-label="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Face Emotion Detection</h3>
+              <span class="project-year">2024</span>
+            </div>
+            <p class="project-description">
+              Real-time facial emotion recognition using computer vision pipeline with classical detection
+              and deep learning-based classification for instant feedback.
+            </p>
+            <div class="project-tags">
+              <span>OpenCV</span>
+              <span>TensorFlow</span>
+              <span>CNN</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Fake News Detection -->
+        <div class="project-card" data-animate data-tilt>
+          <div class="project-image">
+            <img src="img/FakeNews.png" alt="Fake News Detector">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://fake-newsdetection.netlify.app/" target="_blank" class="project-link"
+                  aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>AI Fake News Detector</h3>
+              <span class="project-year">2024</span>
+            </div>
+            <p class="project-description">
+              AI-powered system that verifies news authenticity in real-time using NLP,
+              providing verdicts with confidence scores for both text and URLs.
+            </p>
+            <div class="project-tags">
+              <span>NLP</span>
+              <span>Machine Learning</span>
+              <span>Web App</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: IoT Slurry Management -->
+        <div class="project-card" data-animate data-tilt>
+          <div class="project-image">
+            <img src="img/iot project.png" alt="IoT Slurry Management">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/vanshbadjate07/Smart-Slurry-Control" target="_blank" class="project-link"
+                  aria-label="View Code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>IoT Slurry Management</h3>
+              <span class="project-year">2024</span>
+            </div>
+            <p class="project-description">
+              Automated slurry distribution system using ESP32 and soil sensors with
+              real-time Firebase integration for smart agriculture.
+            </p>
+            <div class="project-tags">
+              <span>IoT</span>
+              <span>ESP32</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">// Get in Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-description">
+          Have a project in mind? Let's discuss how we can work together.
+        </p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info" data-animate>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <a href="mailto:badjatevansh1008@gmail.com">badjatevansh1008@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <a href="tel:+919403931288">+91 9403931288</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p>Kopargaon, Maharashtra</p>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="https://github.com/vanshbadjate07" target="_blank" class="social-link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vansh-badjate1008/" target="_blank" class="social-link">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/vansh_badjate07/" target="_blank" class="social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-animate
+          action="https://formsubmit.co/badjatevansh1008@gmail.com" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2026 Vansh Badjate. Crafted with <span class="heart">❤️</span> and lots of <span
+              class="highlight">code</span>.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
