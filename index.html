@@ -1,700 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vansh Badjate | AI & ML Developer</title>
-  <meta name="description"
-    content="Portfolio of Vansh Badjate - B.Tech student specializing in Artificial Intelligence & Machine Learning at Sanjivani University.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vansh Badjate — AI &amp; ML Engineer</title>
+<meta name="description" content="Vansh Badjate — AI/ML engineer building RAG pipelines, document AI, computer vision systems and data infrastructure that ship to production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
 </head>
-
 <body>
-  <!-- Custom Cursor -->
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
+<div class="scroll-progress"></div>
 
-  <!-- Loading Screen -->
-  <div class="loading-screen">
-    <div class="loader">
-      <div class="loader-text">
-        <span class="letter">V</span>
-        <span class="letter">A</span>
-        <span class="letter">N</span>
-        <span class="letter">S</span>
-        <span class="letter">H</span>
+<!-- ===== NAV ===== -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo"><span class="mark">VB</span></a>
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#about" class="nav-link">Capabilities</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="Vansh-Badjate-Resume.pdf" class="btn btn-solid" download>Résumé</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-main">
+      <p class="eyebrow" data-animate>AI / ML Engineer — RAG · Vision · Data Systems</p>
+      <h1 data-animate data-animate-delay="1">VANSH<br>BADJATE<span>.</span></h1>
+      <p class="hero-role" data-animate data-animate-delay="2">
+        <span class="prompt">&gt;</span> <span class="typing-text"></span><span class="cursor-blink"></span>
+      </p>
+      <p class="hero-sub" data-animate data-animate-delay="2">
+        I build AI systems that read, retrieve and reason correctly — then ship them as real software.
+        Final-year AI &amp; ML engineer, open to full-time and internship roles.
+      </p>
+      <div class="hero-actions" data-animate data-animate-delay="3">
+        <a href="#work" class="btn btn-solid">View Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
       </div>
-      <div class="loader-bar"></div>
+    </div>
+
+    <aside class="status-card" data-animate data-animate-delay="2" aria-label="Current status">
+      <div class="status-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="status-title">status.sh</span>
+      </div>
+      <div class="status-body">
+        <div class="status-row"><span class="sk">location</span><span class="sv">Kopargaon, Maharashtra, IN</span></div>
+        <div class="status-row"><span class="sk">availability</span><span class="sv ok">● open to roles</span></div>
+        <div class="status-row"><span class="sk">currently</span><span class="sv">building RAG + document AI pipelines</span></div>
+        <div class="status-row"><span class="sk">cgpa</span><span class="sv">8.5 / 10</span></div>
+        <div class="status-divider"></div>
+        <div class="status-stack">
+          <span>Python</span><span>FastAPI</span><span>PyTorch</span><span>RAG</span>
+          <span>OpenCV</span><span>AWS</span><span>Docker</span><span>SQL</span>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-row"><span class="sk">shipped</span><span class="sv"><span class="stat-number" data-count="5">0</span> production projects</span></div>
+        <div class="status-row"><span class="sk">internships</span><span class="sv"><span class="stat-number" data-count="3">0</span> completed</span></div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- ===== WORK ===== -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <h2>Selected Work</h2>
+      <span class="section-tag">SECT. 02 — FIVE SYSTEMS, SHIPPED</span>
+    </div>
+    <div class="work-list">
+
+      <article class="project-card" data-animate>
+        <div class="project-top">
+          <div>
+            <span class="project-num">PRJ.01</span>
+            <h3 class="project-title">SafeVision</h3>
+          </div>
+          <span class="project-tag">Computer Vision · Real-Time</span>
+        </div>
+        <div class="pipeline-row">
+          <span class="node">CCTV Feed</span><span class="arrow">→</span>
+          <span class="node">YOLOv8 Detection</span><span class="arrow">→</span>
+          <span class="node">Zone + Weapon Classify</span><span class="arrow">→</span>
+          <span class="node">Flask API</span><span class="arrow">→</span>
+          <span class="node">WhatsApp Alert</span>
+        </div>
+        <p class="project-desc">
+          A real-time CCTV threat detection system built end to end — masked-individual detection,
+          6-class weapon recognition, and zone-based monitoring that fires a WhatsApp alert with image
+          and GPS evidence the moment something looks wrong. Shipped as a full YOLOv8 → Flask →
+          browser application, not a notebook demo.
+        </p>
+        <p class="project-result">🏅 Gold Medal — AI Innovation Expo 2026 (IBM / CareerTiQ)</p>
+        <div class="project-bottom">
+          <div class="project-stack"><span>Python</span><span>OpenCV</span><span>YOLOv8</span><span>Flask</span><span>JavaScript</span></div>
+          <a href="https://github.com/vanshbadjate07" class="project-link" target="_blank" rel="noopener">
+            View Repository
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-top">
+          <div>
+            <span class="project-num">PRJ.02</span>
+            <h3 class="project-title">AI Candidate Screening &amp; Interview System</h3>
+          </div>
+          <span class="project-tag">RAG · LLM Applications</span>
+        </div>
+        <div class="pipeline-row">
+          <span class="node">Résumé PDF</span><span class="arrow">→</span>
+          <span class="node">Chunk + Embed</span><span class="arrow">→</span>
+          <span class="node">ChromaDB</span><span class="arrow">→</span>
+          <span class="node">Ollama (Qwen)</span><span class="arrow">→</span>
+          <span class="node">Adaptive Interview</span>
+        </div>
+        <p class="project-desc">
+          A full RAG pipeline that reads a candidate's résumé and generates role-specific technical
+          questions on the fly — semantic chunking, sentence-transformer embeddings, vector search in
+          ChromaDB, and context-grounded generation through Ollama. Question difficulty adapts as the
+          candidate answers, then the system scores and reports performance automatically.
+        </p>
+        <div class="project-bottom">
+          <div class="project-stack"><span>FastAPI</span><span>React.js</span><span>MongoDB</span><span>ChromaDB</span><span>Ollama / Qwen</span><span>Sentence Transformers</span></div>
+          <a href="https://github.com/vanshbadjate07/AI-Powered-Candidate-Screening-Interview-System-RAG-Based-" class="project-link" target="_blank" rel="noopener">
+            View Repository
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-top">
+          <div>
+            <span class="project-num">PRJ.03</span>
+            <h3 class="project-title">Cloud Data Warehouse on AWS</h3>
+          </div>
+          <span class="project-tag">Data Engineering · ETL</span>
+        </div>
+        <div class="pipeline-row">
+          <span class="node">Raw Sources</span><span class="arrow">→</span>
+          <span class="node">PySpark ETL</span><span class="arrow">→</span>
+          <span class="node">dbt Transform</span><span class="arrow">→</span>
+          <span class="node">Redshift (Star Schema)</span><span class="arrow">→</span>
+          <span class="node">React Dashboard</span>
+        </div>
+        <p class="project-desc">
+          An end-to-end e-commerce data warehouse — customer, order, product, payment and shipping data
+          merged into a Star Schema on Amazon Redshift. SCD Type-2 history, CDC, incremental MERGE
+          loading, full Airflow orchestration, and a FastAPI + React dashboard surfacing revenue and
+          customer-behaviour insights.
+        </p>
+        <div class="project-bottom">
+          <div class="project-stack"><span>AWS S3</span><span>Redshift</span><span>PySpark</span><span>Airflow</span><span>dbt</span><span>Docker</span></div>
+          <a href="https://github.com/vanshbadjate07/Cloud-Data-Warehouse-on-AWS" class="project-link" target="_blank" rel="noopener">
+            View Repository
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-top">
+          <div>
+            <span class="project-num">PRJ.04</span>
+            <h3 class="project-title">Multilingual Translator &amp; Summariser</h3>
+          </div>
+          <span class="project-tag">NLP · Document AI</span>
+        </div>
+        <div class="pipeline-row">
+          <span class="node">PDF / DOCX</span><span class="arrow">→</span>
+          <span class="node">Lang + Tone Detect</span><span class="arrow">→</span>
+          <span class="node">Translate (58 Langs)</span><span class="arrow">→</span>
+          <span class="node">TF-IDF Summary</span><span class="arrow">→</span>
+          <span class="node">Pronunciation Coach</span>
+        </div>
+        <p class="project-desc">
+          A self-contained NLP application — zero paid translation API in the loop. A custom TF-IDF
+          extractive summariser cuts text by an average of 71%, and a three-stage Hinglish detector
+          (Devanagari Unicode + a hand-built lexicon + langdetect) handles code-mixed Indian text that
+          most translators choke on.
+        </p>
+        <div class="project-bottom">
+          <div class="project-stack"><span>Python</span><span>FastAPI</span><span>NLTK</span><span>PyMuPDF</span><span>gTTS</span></div>
+          <a href="https://github.com/vanshbadjate07/Multilingual-Translator-and-Summariser" class="project-link" target="_blank" rel="noopener">
+            View Repository
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-top">
+          <div>
+            <span class="project-num">PRJ.05</span>
+            <h3 class="project-title">ReasonEval — LLM Reasoning Evaluation Engine</h3>
+          </div>
+          <span class="project-tag">LLM Evaluation · Post-Training</span>
+        </div>
+        <div class="pipeline-row">
+          <span class="node">Model Output</span><span class="arrow">→</span>
+          <span class="node">Rubric Scoring</span><span class="arrow">→</span>
+          <span class="node">FastAPI Pipeline</span><span class="arrow">→</span>
+          <span class="node">Failure Pattern Report</span>
+        </div>
+        <p class="project-desc">
+          A post-training evaluation framework that checks whether an LLM's reasoning actually holds up —
+          logical consistency, completeness, instruction adherence — and surfaces hallucinations even
+          when the final answer happens to be right. Backend-agnostic across Ollama and API-based models.
+        </p>
+        <div class="project-bottom">
+          <div class="project-stack"><span>Python</span><span>FastAPI</span><span>Pandas</span><span>LLM APIs</span><span>Ollama</span></div>
+          <a href="https://github.com/vanshbadjate07/LLM-Reasoning-Quality-Evaluation-Engine" class="project-link" target="_blank" rel="noopener">
+            View Repository
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </article>
+
     </div>
   </div>
+</section>
 
-  <!-- Scroll Progress -->
-  <div class="scroll-progress"></div>
-
-  <!-- Particle Background -->
-  <canvas id="particles"></canvas>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <span class="logo-bracket">&lt;</span>
-        <span class="logo-text">Vansh</span>
-        <span class="logo-bracket">/&gt;</span>
-      </div>
-      <div class="nav-toggle" id="navToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="Resume.pdf" target="_blank" class="nav-link nav-resume">Resume</a></li>
-      </ul>
+<!-- ===== CAPABILITIES (skills + education + stats merged) ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <h2>Capabilities</h2>
+      <span class="section-tag">STACK &amp; BACKGROUND</span>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-text" data-animate>
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">
-          <span class="gradient-text">Vansh Badjate</span>
-        </h1>
-        <h2 class="hero-title">
-          <span class="typing-text"></span>
-          <span class="cursor-blink">|</span>
-        </h2>
-        <p class="hero-description">
-          B.Tech student specializing in <span class="highlight">AI & Machine Learning</span> at Sanjivani University.
-          Building intelligent solutions with <span class="highlight">Computer Vision</span> and <span
-            class="highlight">Deep Learning</span>.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">
-            <span>View Projects</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <a href="#contact" class="btn btn-outline">
-            <span>Get in Touch</span>
-          </a>
-        </div>
-        <div class="hero-social">
-          <a href="https://github.com/vanshbadjate07" target="_blank" class="social-icon" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/vansh-badjate1008/" target="_blank" class="social-icon"
-            aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/vansh_badjate07/" target="_blank" class="social-icon"
-            aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+    <div class="cap-grid" data-animate>
+      <div class="cap-col">
+        <h4>AI / GenAI</h4>
+        <div class="skill-tags">
+          <span class="skill-item">RAG</span><span class="skill-item">Agentic AI</span>
+          <span class="skill-item">NLP</span><span class="skill-item">Computer Vision</span>
+          <span class="skill-item">LLM Evaluation</span><span class="skill-item">Prompt Eng.</span>
         </div>
       </div>
-      <div class="hero-image" data-animate>
-        <div class="image-wrapper">
-          <div class="image-glow"></div>
-          <img src="img/img.png" alt="Vansh Badjate">
+      <div class="cap-col">
+        <h4>Engineering</h4>
+        <div class="skill-tags">
+          <span class="skill-item">FastAPI</span><span class="skill-item">PySpark</span>
+          <span class="skill-item">YOLOv8</span><span class="skill-item">Docker</span>
+          <span class="skill-item">Airflow</span><span class="skill-item">AWS / Redshift</span>
         </div>
+      </div>
+      <div class="cap-col">
+        <h4>Languages</h4>
+        <div class="skill-tags">
+          <span class="skill-item">Python</span><span class="skill-item">SQL</span>
+          <span class="skill-item">JavaScript</span><span class="skill-item">Java</span>
+          <span class="skill-item">C++</span>
+        </div>
+      </div>
+      <div class="cap-col cap-edu">
+        <h4>Education</h4>
+        <div class="edu-row"><span>B.Tech CSE — AI &amp; ML, Sanjivani University</span><span class="edu-meta">2024–27 · 8.5 CGPA</span></div>
+        <div class="edu-row"><span>Diploma, Computer Tech.</span><span class="edu-meta">84.51%</span></div>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <div class="mouse">
-        <div class="wheel"></div>
-      </div>
-      <p>Scroll Down</p>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <h2>Experience</h2>
+      <span class="section-tag">3 INTERNSHIPS</span>
     </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">// About Me</span>
-        <h2 class="section-title">Who I Am</h2>
+    <div class="exp-list">
+      <div class="exp-row" data-animate>
+        <div class="exp-date">Jan – May 2026</div>
+        <div class="exp-mid">
+          <h3>LLM Post-Training Intern</h3>
+          <span class="exp-org">Ethara AI · Gurugram</span>
+        </div>
+        <p class="exp-desc">Rubric-evaluated LLM outputs for RLHF/SFT alignment; logged hallucination &amp; reasoning-gap patterns across client projects.</p>
       </div>
-
-      <div class="about-content">
-        <div class="about-text" data-animate>
-          <p>
-            I'm a <span class="highlight">third-year B.Tech student</span> specializing in
-            <span class="highlight">Artificial Intelligence & Machine Learning</span> at Sanjivani University,
-            Kopargaon.
-            With a strong foundation in computer science and a passion for AI, I'm dedicated to building
-            intelligent systems that solve real-world problems.
-          </p>
-          <p>
-            My expertise spans <span class="highlight">Computer Vision</span>, <span class="highlight">Deep
-              Learning</span>,
-            and <span class="highlight">Machine Learning</span>. I've developed projects ranging from real-time threat
-            detection systems to healthcare AI applications, always focusing on creating impactful solutions.
-          </p>
-          <p>
-            Beyond academics, I actively participate in hackathons and continuously expand my knowledge
-            through hands-on projects and internships. I'm driven by curiosity and the desire to push
-            the boundaries of what's possible with AI.
-          </p>
-
-          <div class="achievements-grid">
-            <div class="achievement-badge">
-              <i class="fa-solid fa-trophy"></i>
-              <div>
-                <h4>SunHack 2025</h4>
-                <p>Hackathon Participant</p>
-              </div>
-            </div>
-
-            <div class="achievement-badge">
-              <i class="fa-solid fa-award"></i>
-              <div>
-                <h4>AI & Cloud</h4>
-                <p>Internship Experience</p>
-              </div>
-            </div>
-          </div>
+      <div class="exp-row" data-animate>
+        <div class="exp-date">Jul – Aug 2025</div>
+        <div class="exp-mid">
+          <h3>AI &amp; Cloud Intern</h3>
+          <span class="exp-org">IBM SkillsBuild · Edunet &amp; AICTE</span>
         </div>
-
-        <div class="about-education" data-animate>
-          <h3 class="education-title">Education</h3>
-
-          <div class="education-item">
-            <div class="education-header">
-              <div class="education-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <div class="education-info">
-                <h4>B.Tech in CSE (AI & ML)</h4>
-                <p class="institution">Sanjivani University, Kopargaon</p>
-                <p class="duration">2024 - 2027</p>
-              </div>
-            </div>
-            <div class="education-grade">
-              <span class="grade-label">CGPA</span>
-              <span class="grade-value">8.55</span>
-            </div>
-          </div>
-
-          <div class="education-item">
-            <div class="education-header">
-              <div class="education-icon">
-                <i class="fa-solid fa-certificate"></i>
-              </div>
-              <div class="education-info">
-                <h4>Diploma in Computer Engineering</h4>
-                <p class="institution">Sanjivani K.B.P. Polytechnic, Kopargaon</p>
-                <p class="duration">2021 - 2024</p>
-              </div>
-            </div>
-            <div class="education-grade">
-              <span class="grade-label">Percentage</span>
-              <span class="grade-value">84.51%</span>
-            </div>
-          </div>
-
-          <div class="education-item">
-            <div class="education-header">
-              <div class="education-icon">
-                <i class="fa-solid fa-school"></i>
-              </div>
-              <div class="education-info">
-                <h4>SSC (10th)</h4>
-                <p class="institution">S.G.Vidyalaya, Kopargaon</p>
-                <p class="duration">2021</p>
-              </div>
-            </div>
-            <div class="education-grade">
-              <span class="grade-label">Percentage</span>
-              <span class="grade-value">85.60%</span>
-            </div>
-          </div>
+        <p class="exp-desc">Built an agentic research-assistant on IBM Watsonx — paper summarisation, drafting, IAM-authenticated search.</p>
+      </div>
+      <div class="exp-row" data-animate>
+        <div class="exp-date">Jul – Aug 2023</div>
+        <div class="exp-mid">
+          <h3>Web Development Intern</h3>
+          <span class="exp-org">Techking Solution · Shirdi</span>
         </div>
+        <p class="exp-desc">Shipped a live currency-converter site with real-time API integration; led UI/UX and deployment.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">// Tech Stack</span>
-        <h2 class="section-title">Skills & Technologies</h2>
+<!-- ===== RECOGNITION (compact strip) ===== -->
+<section class="section" id="recognition">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <h2>Recognition</h2>
+      <span class="section-tag">AWARDS &amp; IP</span>
+    </div>
+    <div class="recog-strip" data-animate>
+      <div class="recog-chip"><strong>Gold Medal</strong><span>AI Innovation Expo 2026</span></div>
+      <div class="recog-chip"><strong>Top 25 / 60</strong><span>Kumbha Innovation Challenge</span></div>
+      <div class="recog-chip"><strong>Registered Copyright</strong><span>Nyay-AI · Govt. of India</span></div>
+      <div class="recog-chip"><strong>National Hackathon</strong><span>SUNHACKS 2025</span></div>
+      <div class="recog-chip"><strong>Vice President</strong><span>AIML Dept. Association</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-head" data-animate>
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Let's<br>Build<br>Something.</h2>
+        <p>Open to AI/ML, GenAI and data engineering roles. Got a hard retrieval or evaluation problem? I'd like to hear it.</p>
+        <div class="contact-links">
+          <a href="mailto:badjatevansh1008@gmail.com"><span class="k">Email</span><span>badjatevansh1008@gmail.com</span></a>
+          <a href="tel:+919403931288"><span class="k">Phone</span><span>+91 94039 31288</span></a>
+          <a href="https://github.com/vanshbadjate07" target="_blank" rel="noopener"><span class="k">GitHub</span><span>vanshbadjate07</span></a>
+          <a href="https://linkedin.com/in/vansh-badjate1008" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span>vansh-badjate1008</span></a>
+          <a href="https://leetcode.com/vanshbadjate" target="_blank" rel="noopener"><span class="k">LeetCode</span><span>vanshbadjate</span></a>
+        </div>
       </div>
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/badjatevansh1008@gmail.com" method="POST" data-animate data-animate-delay="1">
+        <input type="hidden" name="_subject" value="New message from portfolio site">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+        <button type="submit" class="btn btn-solid">Send Message</button>
+        <p class="form-note">Goes straight to my inbox.</p>
+      </form>
+    </div>
+  </div>
+</section>
 
-      <div class="skills-marquee">
-        <div class="marquee-content">
-          <div class="skill-item">
-            <i class="fa-brands fa-python"></i>
-            <span>Python</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-brain"></i>
-            <span>TensorFlow</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-eye"></i>
-            <span>OpenCV</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-cube"></i>
-            <span>Keras</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-chart-line"></i>
-            <span>Scikit-learn</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-table"></i>
-            <span>Pandas</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-calculator"></i>
-            <span>NumPy</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-flask"></i>
-            <span>Flask</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-bolt"></i>
-            <span>Streamlit</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-java"></i>
-            <span>Java</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-terminal"></i>
-            <span>C++</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-html5"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-css3-alt"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-js"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-database"></i>
-            <span>MySQL</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-leaf"></i>
-            <span>MongoDB</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-git-alt"></i>
-            <span>Git</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-          </div>
-        </div>
-        <!-- Duplicate for seamless loop -->
-        <div class="marquee-content" aria-hidden="true">
-          <div class="skill-item">
-            <i class="fa-brands fa-python"></i>
-            <span>Python</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-brain"></i>
-            <span>TensorFlow</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-eye"></i>
-            <span>OpenCV</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-cube"></i>
-            <span>Keras</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-chart-line"></i>
-            <span>Scikit-learn</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-table"></i>
-            <span>Pandas</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-calculator"></i>
-            <span>NumPy</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-flask"></i>
-            <span>Flask</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-bolt"></i>
-            <span>Streamlit</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-java"></i>
-            <span>Java</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-terminal"></i>
-            <span>C++</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-html5"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-css3-alt"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-js"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-database"></i>
-            <span>MySQL</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-solid fa-leaf"></i>
-            <span>MongoDB</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-git-alt"></i>
-            <span>Git</span>
-          </div>
-          <div class="skill-item">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-          </div>
-        </div>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="title-block">
+      <div class="tb-cell"><span class="k">Name</span><span class="v">Vansh Badjate</span></div>
+      <div class="tb-cell"><span class="k">Role</span><span class="v">AI / ML Engineer</span></div>
+      <div class="tb-cell"><span class="k">Rev</span><span class="v">2026.06</span></div>
+      <div class="tb-cell" style="display:flex; align-items:center; justify-content:space-between;">
+        <span class="k">Top</span>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">// Portfolio</span>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-description">
-          A collection of my work in AI, Computer Vision, and Web Development
-        </p>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1: SafeVision -->
-        <div class="project-card" data-animate data-tilt>
-          <div class="project-image">
-            <img src="img/Safevision.png" alt="SafeVision CCTV System">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://github.com/vanshbadjate07/SafeVision-Real-Time-Smart-CCTV-Threat-Detection-System"
-                  target="_blank" class="project-link" aria-label="View Code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>SafeVision</h3>
-            </div>
-            <p class="project-description">
-              Real-time smart CCTV threat detection system with weapon detection, masked individual identification,
-              and automated alert mechanisms for enhanced security.
-            </p>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>OpenCV</span>
-              <span>Flask</span>
-              <span>Deep Learning</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Skin Cancer Classification -->
-        <div class="project-card" data-animate data-tilt>
-          <div class="project-image">
-            <img src="img/SkinCancer.png" alt="Skin Cancer Classification">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://github.com/vanshbadjate07/Skin-Cancer-Detection" target="_blank" class="project-link"
-                  aria-label="View Code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Skin Cancer Classifier</h3>
-            </div>
-            <p class="project-description">
-              Image-based skin cancer classification system using deep learning to identify cancer types (AK, BCC, SK)
-              with confidence scores and heatmap visualization.
-            </p>
-            <div class="project-tags">
-              <span>PyTorch</span>
-              <span>Streamlit</span>
-              <span>OpenCV</span>
-              <span>Healthcare AI</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: AgriPredict -->
-        <div class="project-card" data-animate data-tilt>
-          <div class="project-image">
-            <img src="img/AgriPredict.png" alt="AgriPredict System">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://github.com/vanshbadjate07/AgriPredict" target="_blank" class="project-link"
-                  aria-label="View Code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>AgriPredict</h3>
-            </div>
-            <p class="project-description">
-              Smart crop yield forecasting platform using ML with real-time weather monitoring and
-              multilingual voice assistant for enhanced accessibility.
-            </p>
-            <div class="project-tags">
-              <span>Machine Learning</span>
-              <span>Flask</span>
-              <span>Node.js</span>
-              <span>API Integration</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Roadmap Generator -->
-        <div class="project-card" data-animate data-tilt>
-          <div class="project-image">
-            <img src="img/Roadmap-Gen.png" alt="Roadmap Generator">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://github.com/vanshbadjate07/Roadmap-Generator" target="_blank" class="project-link"
-                  aria-label="View Code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Roadmap Generator</h3>
-            </div>
-            <p class="project-description">
-              AI-powered educational platform using Google Gemini to generate personalized learning paths. Features
-              social community for sharing roadmaps and trending paths.
-            </p>
-            <div class="project-tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>Firestore</span>
-              <span>Gemini AI</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: Mithya - Deepfake Detection -->
-        <div class="project-card" data-animate data-tilt>
-          <div class="project-image">
-            <img src="img/Deepfake.png" alt="Mithya Deepfake Detection">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://github.com/vanshbadjate07/DeepFake-Detection-System" target="_blank"
-                  class="project-link" aria-label="View Code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Mithya - Deepfake Detection</h3>
-            </div>
-            <p class="project-description">
-              State-of-the-art deepfake detection using Vision Transformers and EfficientNetV2 ensemble. Built with
-              PyTorch and MediaPipe for robust real-time detection.
-            </p>
-            <div class="project-tags">
-              <span>PyTorch</span>
-              <span>Vision Transformers</span>
-              <span>OpenCV</span>
-              <span>MediaPipe</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: Face Emotion Detection -->
-        <div class="project-card" data-animate data-tilt>
-          <div class="project-image">
-            <img src="img/FaceEmotion.png" alt="Face Emotion Detection">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://github.com/vanshbadjate07/Face-Emotion-Detection-" target="_blank" class="project-link"
-                  aria-label="View Code">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-header">
-              <h3>Face Emotion Detection</h3>
-            </div>
-            <p class="project-description">
-              Real-time facial emotion recognition using computer vision pipeline with classical detection
-              and deep learning-based classification for instant feedback.
-            </p>
-            <div class="project-tags">
-              <span>OpenCV</span>
-              <span>TensorFlow</span>
-              <span>CNN</span>
-              <span>Python</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-tag">// Get in Touch</span>
-        <h2 class="section-title">Let's Work Together</h2>
-        <p class="section-description">
-          Have a project in mind? Let's discuss how we can work together.
-        </p>
-      </div>
-
-      <div class="contact-content">
-        <div class="contact-info" data-animate>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-text">
-              <h4>Email</h4>
-              <a href="mailto:badjatevansh1008@gmail.com">badjatevansh1008@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="contact-text">
-              <h4>Phone</h4>
-              <a href="tel:+919403931288">+91 9403931288</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div class="contact-text">
-              <h4>Location</h4>
-              <p>Kopargaon, Maharashtra</p>
-            </div>
-          </div>
-
-          <div class="contact-social">
-            <a href="https://github.com/vanshbadjate07" target="_blank" class="social-link">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/vansh-badjate1008/" target="_blank" class="social-link">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/vansh_badjate07/" target="_blank" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-
-        <form class="contact-form" id="contactForm" data-animate
-          action="https://formsubmit.co/badjatevansh1008@gmail.com" method="POST">
-          <!-- FormSubmit Configuration -->
-          <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none">
-
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full">
-            <span>Send Message</span>
-            <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-text">
-          <p>&copy; 2026 Vansh Badjate. Crafted with <span class="heart">❤️</span> and lots of <span
-              class="highlight">code</span>.</p>
-        </div>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
